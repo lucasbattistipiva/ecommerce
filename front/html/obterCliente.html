@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/obterCliente.js" defer></script>
+    <title>Obter Cliente</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../src/logo.png" alt="Logo">
+            <div>
+                <a href="./index.html">Início</a>
+                <a href="./listarClientes.html">Listar Clientes</a>
+                <a href="./cadastrarCliente.html">Cadastrar Cliente</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Buscar Cliente por ID</h1>
+        <form id="buscarClienteForm">
+            <label for="clienteId">ID do Cliente:</label>
+            <input type="number" id="clienteId" name="clienteId" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="clienteInfo">
+            <!-- Informações do cliente aparecerão aqui -->
+        </div>
+    </main>
+</body>
+
+</html>

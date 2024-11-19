@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Entrega</title>
+    <script defer src="../js/cadastrarEntrega.js"></script>
+</head>
+<body>
+    <h1>Criar Nova Entrega</h1>
+    <form >
+        <label for="pedidoId">ID do Pedido:</label>
+        <input type="number" id="pedidoId" name="pedidoId" required><br><br>
+
+        <label for="nomeProduto">Nome do Produto:</label>
+        <input type="text" id="nomeProduto" name="nomeProduto" required><br><br>
+
+        <label for="quantidadeProduto">Quantidade:</label>
+        <input type="number" id="quantidadeProduto" name="quantidadeProduto" required><br><br>
+
+        <label for="dataEntrega">Data de Entrega:</label>
+        <input type="date" id="dataEntrega" name="dataEntrega" required><br><br>
+
+        <button type="submit" id="cadastrarEntrega">Criar</button>
+    </form>
+    <p id="resposta"></p>
+</body>
+</html>
