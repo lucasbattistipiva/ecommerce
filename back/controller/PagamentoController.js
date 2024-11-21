@@ -4,7 +4,7 @@ const Pagamento = require('../models/Pagamento');
 exports.criarPagamento = async (req, res) => {
     try {
         const pagamento = await Pagamento.create(req.body);
-        res.status(201).json(pagamento);
+        res.status(201).json({message:"Pagamento cadastrado com sucesso"});
     } catch (error) {
         res.status(500).json({ error: 'Erro ao criar pagamento', details: error });
     }

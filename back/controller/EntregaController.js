@@ -4,7 +4,7 @@ const Entrega = require('../models/Entrega');
 exports.criarEntrega = async (req, res) => {
     try {
         const entrega = await Entrega.create(req.body);
-        res.status(201).json(entrega);
+        res.status(201).json({message:"Entrega cadastrada com sucesso"});
     } catch (error) {
         res.status(500).json({ error: 'Erro ao criar entrega', details: error });
     }

@@ -4,7 +4,7 @@ const Estoque = require('../models/Estoque');
 exports.criarEstoque = async (req, res) => {
     try {
         const estoque = await Estoque.create(req.body);
-        res.status(201).json(estoque);
+        res.status(201).json({message:"Estoque cadastrada com sucesso"});
     } catch (error) {
         res.status(500).json({ error: 'Erro ao criar estoque', details: error });
     }

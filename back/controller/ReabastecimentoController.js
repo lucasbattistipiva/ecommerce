@@ -4,7 +4,7 @@ const Reabastecimento = require('../models/Reabastecimento');
 exports.criarReabastecimento = async (req, res) => {
     try {
         const reabastecimento = await Reabastecimento.create(req.body);
-        res.status(201).json(reabastecimento);
+        res.status(201).json({message:"Reabastecimento cadastrado com sucesso"});
     } catch (error) {
         res.status(500).json({ error: 'Erro ao criar reabastecimento', details: error });
     }

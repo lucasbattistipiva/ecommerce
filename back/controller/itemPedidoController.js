@@ -4,7 +4,7 @@ const ItemPedido = require('../models/ItemPedido');
 exports.criarItemPedido = async (req, res) => {
     try {
         const itemPedido = await ItemPedido.create(req.body);
-        res.status(201).json(itemPedido);
+        res.status(201).json({message:"Item cadastrado com sucesso"});
     } catch (error) {
         res.status(500).json({ error: 'Erro ao criar item de pedido', details: error });
     }

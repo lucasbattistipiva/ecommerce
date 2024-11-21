@@ -13,7 +13,7 @@ exports.criarProduto = async (req, res) => {
             descricaoProduto
         });
 
-        return res.status(201).json(novoProduto);
+        return res.status(201).json({message:"Produto cadastrada com sucesso"});
     } catch (error) {
         console.error(error);
         return res.status(500).json({ message: 'Erro ao criar o produto' });

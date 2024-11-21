@@ -4,7 +4,7 @@ const Fabricante = require('../models/Fabricante');
 exports.criarFabricante = async (req, res) => {
     try {
         const fabricante = await Fabricante.create(req.body);
-        res.status(201).json(fabricante);
+        res.status(201).json({message:"Fabricante cadastrado com sucesso"});
     } catch (error) {
         res.status(500).json({ error: 'Erro ao criar fabricante', details: error });
     }
