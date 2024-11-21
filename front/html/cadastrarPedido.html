@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
+    <script src="../js/cadastrarPedido.js" defer></script>
+    <title>Cadastrar</title>
+</head>
+
+<body>
+    <header> 
+        
+        <nav>
+            <img src="../src/logo.png" alt="Logo">
+            <div>
+            <a href="./index.html">Início</a>
+            <a href="./cadastrarPedido.html">Cadastrar Pedido</a>
+            <a href="./listarPedidos.html">Listar Pedidos</a>
+            <a href="./obterPedido.html">Obter Pedido</a>
+            <a href="./atualizarPedido.html">Atualizar Pedido</a>
+            <a href="./excluirPedido.html">Excluir Pedido</a>
+        </div>
+        </nav>
+    </header>
+    <h1>Pedido</h1>
+    <main>
+        
+        <form >
+            
+                <label for="clienteId">Cliente ID:</label>
+                <input type="text" id="clienteId" name="clienteId" required><br><br>
+            
+                <label for="dataPedido">data:</label>
+                <input type="text" id="dataPedido" name="dataPedido" required><br><br>
+            
+                <label for="valorPedido">valorPedido:</label>
+                <input type="text" id="valorPedido" name="valorPedido" required><br><br>
+            
+            
+                <button type="submit" id="cadastrarPedido">Cadastrar</button><br>
+            </form>    
+       <div id="res"></div>
+    </main>
+</body>
+
+</html>

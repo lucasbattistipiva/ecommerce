@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/atualizarFabricante.js" defer></script>
+    <title>Atualizar Fabricante</title>
+</head>
+
+<body>
+    <header> 
+        <nav>
+            <img src="../src/logo.png" alt="Logo">
+            <div>
+            <a href="./index.html">Início</a>
+            <a href="./cadastrarFabricante.html">Cadastrar Fabricante</a>
+            <a href="./listarFabricantes.html">Listar Fabricantes</a>
+            <a href="./obterFabricante.html">Obter Fabricante</a>
+            <a href="./atualizarFabricante.html">Atualizar Fabricante</a>
+            <a href="./excluirFabricante.html">Excluir Fabricante</a>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Atualizar Fabricante</h1>
+        <form >
+
+            <label for="fabricanteId">ID do fabricante:</label>
+            <input type="number" id="fabricanteId" name="fabricanteId" required><br><br>
+            
+            <label for="nomeFabricante">Nome:</label>
+            <input type="text" id="nomeFabricante" name="nomeFabricante" required><br><br>
+        
+            <label for="marcaFabricante">Marca:</label>
+            <input type="text" id="marcaFabricante" name="marcaFabricante" required><br><br>
+        
+            <label for="cnpjFabricante">Cnpj:</label>
+            <input type="text" id="cnpjFabricante" name="cnpjFabricante" required><br><br>
+        
+            <label for="telefoneFabricante">Telefone:</label>
+            <input type="text" id="telefoneFabricante" name="telefoneFabricante" required><br><br>
+        
+            <label for="emailFabricante">Email:</label>
+            <input type="email" id="emailFabricante" name="emailFabricante" required><br><br>
+        
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" required><br><br>
+        
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required><br><br>
+        
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento"><br><br>
+        
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required><br><br>
+        
+            <label for="localidade">Localidade:</label>
+            <input type="text" id="localidade" name="localidade" required><br><br>
+        
+            <label for="uf">UF:</label>
+            <input type="text" id="uf" name="uf" required><br><br>
+        
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required><br><br>
+
+
+            <button type="submit" id="atualizarFabricanteForm">Atualizar</button>
+        </form>
+        <div id="res"></div>
+    </main>
+</body>
+
+</html>

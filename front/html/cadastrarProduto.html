@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
+    <script src="../js/cadastrarProduto.js" defer></script>
+    <title>Cadastrar</title>
+</head>
+
+<body>
+    <header> 
+        
+        <nav>
+            <img src="../src/logo.png" alt="Logo">
+            <div>
+            <a href="./index.html">Início</a>
+            <a href="./cadastrarProduto.html">Cadastrar Produto</a>
+            <a href="./listarProdutos.html">Listar Produto</a>
+            <a href="./obterProduto.html">Obter Produto</a>
+            <a href="./atualizarProduto.html">Atualizar Produto</a>
+            <a href="./excluirProduto.html">Excluir Produto</a>
+        </div>
+        </nav>
+    </header>
+    <h1>Produto</h1>
+    <main>
+        
+        <form >
+            
+                <label for="fabricanteId">fabricanteId:</label>
+                <input type="text" id="fabricanteId" name="fabricanteId" required><br><br>
+            
+                <label for="nomeProduto">nome:</label>
+                <input type="text" id="nomeProduto" name="nomeProduto" required><br><br>
+            
+                <label for="quantidadeProduto">quantidade:</label>
+                <input type="text" id="quantidadeProduto" name="quantidadeProduto" required><br><br>
+            
+                <label for="precoProduto">preco:</label>
+                <input type="text" id="precoProduto" name="precoProduto" required><br><br>
+
+                <label for="descricaoProduto">descricao:</label>
+                <input type="text" id="descricaoProduto" name="descricaoProduto" required><br><br>
+            
+                <button type="submit" id="cadastrarProduto">Cadastrar</button><br>
+            </form>    
+       <div id="res"></div>
+    </main>
+</body>
+
+</html>

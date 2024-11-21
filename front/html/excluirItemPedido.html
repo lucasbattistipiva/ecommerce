@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/excluirItemPedido.js" defer></script>
+    <title>Excluir ItemPedido</title>
+</head>
+<body>
+    <header> 
+        <nav>
+            <img src="../src/logo.png" alt="Logo">
+            <div>
+            <a href="./index.html">Início</a>
+            <a href="./cadastrarItemPedidos.html">Cadastrar ItemPedido</a>
+            <a href="./listarItemPedidos.html">Listar ItemPedidos</a>
+            <a href="./obterItemPedido.html">Obter ItemPedido</a>
+            <a href="./atualizarItemPedido.html">Atualizar ItemPedido</a>
+            <a href="./excluirItemPedido.html">Excluir ItemPedido</a>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Excluir ItemPedido</h1>
+        <form >
+            <label for="itempedidoId">ID do ItemPedido:</label>
+            <input type="number" id="itempedidoId" name="itempedidoId" required>
+            <button type="submit" id="excluiritempedidoForm">Excluir</button>
+        </form>
+
+        <div id="res" style="margin-top: 20px;">
+            
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
+    <script src="../js/cadastrarPagamentos.js" defer></script>
+    <title>Cadastrar</title>
+</head>
+
+<body>
+    <header> 
+        <nav>
+            <img src="../src/logo.png" alt="Logo">
+            <div>
+            <a href="./index.html">Início</a>
+            <a href="./cadastrarPagamentos.html">Cadastrar Pagamento</a>
+            <a href="./listarPagamentos.html">Listar Pagamentos</a>
+            <a href="./obterPagamento.html">Obter Pagamento</a>
+            <a href="./atualizarPagamento.html">Atualizar Pagamento</a>
+            <a href="./excluirPagamento.html">Excluir Pagamento</a>
+        </div>
+        </nav>
+    </header>
+    <h1>ItemPedido</h1>
+    <main>
+        
+        <form >
+            
+                <label for="pedidoId">pedidoId:</label>
+                <input type="text" id="pedidoId" name="pedidoId" required><br><br>
+            
+                <label for="dataVencimento">data de vencimento:</label>
+                <input type="text" id="dataVencimento" name="dataVencimento" required><br><br>
+            
+                <label for="valorPagamento">valor:</label>
+                <input type="text" id="valorPagamento" name="valorPagamento" required><br><br>
+
+                <button type="submit" id="cadastrarPagamento">Cadastrar</button><br>
+            </form>    
+       <div id="res"></div>
+    </main>
+</body>
+
+</html>

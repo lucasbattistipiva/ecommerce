@@ -1,11 +1,11 @@
 const resultado = document.getElementById("res");
 
-document.getElementById("excluirpagamentoForm").addEventListener('click', async (e) => {
+document.getElementById("excluiritempedidoForm").addEventListener('click', async (e) => {
     e.preventDefault();
 
-    const pagamentoId = document.getElementById('pagamentoId').value;
+    const itempedidoId = document.getElementById('itempedidoId').value;
 
-   fetch(`http://localhost:3000/pagamentos/${pagamentoId}`,{
+   fetch(`http://localhost:3000/clientes/${itempedidoId}`,{
     method: "DELETE"
    }).then(resp=>resp.json())
    .then(dd=>{

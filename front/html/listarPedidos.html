@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/listarPedido.js" defer></script>
+    <title>Listar Pedidos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../src/logo.png" alt="Logo">
+            <div>
+            <a href="./index.html">Início</a>
+            <a href="./cadastrarPedido.html">Cadastrar Pedido</a>
+            <a href="./listarPedidos.html">Listar Pedidos</a>
+            <a href="./obterPedido.html">Obter Pedido</a>
+            <a href="./atualizarPedido.html">Atualizar Pedido</a>
+            <a href="./excluirPedido.html">Excluir Pedido</a>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Lista de Pedido</h1>
+        <div id="pedidos-lista">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>clienteId</th>
+                        <th>dataPedido</th>
+                        <th>valorPedido</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-pedidos">
+                    <!-- Dados serão carregados aqui -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

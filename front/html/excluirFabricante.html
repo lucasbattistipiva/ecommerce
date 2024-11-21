@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/excluirFabricante.js" defer></script>
+    <title>Excluir Cliente</title>
+</head>
+<body>
+    <header> 
+        <nav>
+            <img src="../src/logo.png" alt="Logo">
+            <div>
+            <a href="./index.html">Início</a>
+            <a href="./cadastrarFabricante.html">Cadastrar Fabricante</a>
+            <a href="./listarFabricantes.html">Listar Fabricantes</a>
+            <a href="./obterFabricante.html">Obter Fabricante</a>
+            <a href="./atualizarFabricante.html">Atualizar Fabricante</a>
+            <a href="./excluirFabricante.html">Excluir Fabricante</a>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Excluir fabricante</h1>
+        <form >
+            <label for="fabricanteId">ID do fabricante:</label>
+            <input type="number" id="fabricanteId" name="fabricanteId" required>
+            <button type="submit" id="excluirfabricanteForm">Excluir</button>
+        </form>
+
+        <div id="res" style="margin-top: 20px;">
+            
+        </div>
+    </main>
+</body>
+</html>

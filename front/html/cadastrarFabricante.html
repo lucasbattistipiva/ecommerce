@@ -6,44 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
-    <script src="../js/cadastrarCliente.js" defer></script>
+    <script src="../js/cadastrarFabricante.js" defer></script>
     <title>Cadastrar</title>
 </head>
 
 <body>
     <header> 
-        
         <nav>
             <img src="../src/logo.png" alt="Logo">
             <div>
             <a href="./index.html">Início</a>
-            <a href="./cadastrarCliente.html">Cadastrar Cliente</a>
-            <a href="./listarClientes.html">Listar Clientes</a>
-            <a href="./obterCliente.html">Obter Cliente</a>
-            <a href="./atualizarCliente.html">Atualizar Cliente</a>
-            <a href="./excluirCliente.html">Excluir Cliente</a>
+            <a href="./cadastrarFabricante.html">Cadastrar Fabricante</a>
+            <a href="./listarFabricantes.html">Listar Fabricantes</a>
+            <a href="./obterFabricante.html">Obter Fabricante</a>
+            <a href="./atualizarFabricante.html">Atualizar Fabricante</a>
+            <a href="./excluirFabricante.html">Excluir Fabricante</a>
         </div>
         </nav>
     </header>
-    <h1>Cliente</h1>
+    <h1>Fabricante</h1>
     <main>
         
         <form >
             
-                <label for="nomeCliente">Nome:</label>
-                <input type="text" id="nomeCliente" name="nomeCliente" required><br><br>
+                <label for="nomeFabricante">Nome:</label>
+                <input type="text" id="nomeFabricante" name="nomeFabricante" required><br><br>
             
-                <label for="sobrenomeCliente">Sobrenome:</label>
-                <input type="text" id="sobrenomeCliente" name="sobrenomeCliente" required><br><br>
+                <label for="marcaFabricante">Marca:</label>
+                <input type="text" id="marcaFabricante" name="marcaFabricante" required><br><br>
             
-                <label for="cpfCliente">CPF:</label>
-                <input type="text" id="cpfCliente" name="cpfCliente" required><br><br>
+                <label for="cnpjFabricante">Cnpj:</label>
+                <input type="text" id="cnpjFabricante" name="cnpjFabricante" required><br><br>
             
-                <label for="telefoneCliente">Telefone:</label>
-                <input type="text" id="telefoneCliente" name="telefoneCliente" required><br><br>
+                <label for="telefoneFabricante">Telefone:</label>
+                <input type="text" id="telefoneFabricante" name="telefoneFabricante" required><br><br>
             
-                <label for="emailCliente">Email:</label>
-                <input type="email" id="emailCliente" name="emailCliente" required><br><br>
+                <label for="emailFabricante">Email:</label>
+                <input type="email" id="emailFabricante" name="emailFabricante" required><br><br>
             
                 <label for="logradouro">Logradouro:</label>
                 <input type="text" id="logradouro" name="logradouro" required><br><br>
@@ -65,11 +64,8 @@
             
                 <label for="cep">CEP:</label>
                 <input type="text" id="cep" name="cep" required><br><br>
-            
-                <label for="statusCliente">Status:</label>
-                <input type="text" id="statusCliente" name="statusCliente" required><br><br>
-            
-                <button type="submit" id="cadastrarCliente">Cadastrar</button><br>
+
+                <button type="submit" id="cadastrarFabricante">Cadastrar</button><br>
             </form>    
        <div id="res"></div>
     </main>

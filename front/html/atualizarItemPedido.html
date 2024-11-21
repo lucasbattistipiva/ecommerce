@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/atualizarItemPedido.js" defer></script>
+    <title>Atualizar ItemPedido</title>
+</head>
+
+<body>
+    <header> 
+        <nav>
+            <img src="../src/logo.png" alt="Logo">
+            <div>
+            <a href="./index.html">Início</a>
+            <a href="./cadastrarItemPedidos.html">Cadastrar ItemPedido</a>
+            <a href="./listarItemPedidos.html">Listar ItemPedidos</a>
+            <a href="./obterItemPedido.html">Obter ItemPedido</a>
+            <a href="./atualizarItemPedido.html">Atualizar ItemPedido</a>
+            <a href="./excluirItemPedido.html">Excluir ItemPedido</a>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Atualizar ItemPedido</h1>
+        <form >
+            <label for="itempedidoId">ID do ItemPedido:</label>
+            <input type="number" id="itempedidoId" name="itempedidoId" placeholder="Digite o ID do itempedido" required>
+
+            <label for="pedidoId">pedidoId:</label>
+                <input type="text" id="pedidoId" name="pedidoId" required><br><br>
+            
+                <label for="produtoId">produtoId:</label>
+                <input type="text" id="produtoId" name="produtoId" required><br><br>
+            
+                <label for="quantidadeProduto">quantidade:</label>
+                <input type="text" id="quantidadeProduto" name="quantidadeProduto" required><br><br>
+            
+                <label for="precoProduto">preco:</label>
+                <input type="text" id="precoProduto" name="precoProduto" required><br><br>
+
+            <button type="submit" id="atualizaritempedidoForm">Atualizar</button>
+        </form>
+        <div id="res"></div>
+    </main>
+</body>
+
+</html>
