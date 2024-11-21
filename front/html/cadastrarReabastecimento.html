@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
+    <script src="../js/cadastrarReabastecimento.js" defer></script>
+    <title>Cadastrar</title>
+</head>
+
+<body>
+    <header> 
+        
+        <nav>
+            <img src="../src/logo.png" alt="Logo">
+            <div>
+            <a href="./index.html">Início</a>
+            <a href="./cadastrarReabastecimento.html">Cadastrar Reabastecimento</a>
+            <a href="./listarReabastecimentos.html">Listar Reabastecimentos</a>
+            <a href="./obterReabastecimento.html">Obter Reabastecimento</a>
+            <a href="./atualizarReabastecimento.html">Atualizar Reabastecimento</a>
+            <a href="./excluirReabastecimento.html">Excluir Reabastecimento</a>
+        </div>
+        </nav>
+    </header>
+    <h1>Reabastecimento</h1>
+    <main>
+        
+        <form >
+            
+                <label for="estoqueId">EstoqueId:</label>
+                <input type="text" id="estoqueId" name="estoqueId" required><br><br>
+            
+                <label for="nomeProduto">Nome:</label>
+                <input type="text" id="nomeProduto" name="nomeProduto" required><br><br>
+            
+                <label for="quantidadeEstoque">Quantidade:</label>
+                <input type="text" id="quantidadeEstoque" name="quantidadeEstoque" required><br><br>
+            
+                <label for="dataReabastecimento">Data:</label>
+                <input type="date" id="dataReabastecimento" name="dataReabastecimento" required><br><br>
+            
+                <button type="submit" id="cadastrarReabastecimento">Cadastrar</button><br>
+            </form>    
+       <div id="res"></div>
+    </main>
+</body>
+
+</html>

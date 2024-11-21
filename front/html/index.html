@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
-    <title>Início</title>
+    <script src="../js/script.js" defer></script>
+    <title>Loja de Camisetas</title>
 </head>
-
 <body>
     <header>
         <nav>
-            <img src="../src/logo.png">
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>  
-            <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png">
+            <img src="../src/logo.png" alt="Logo">
+            <a href="../html/index.html">Início</a>
+            <a href="../html/carrinho.html">Carrinho</a>
         </nav>
     </header>
     <main>
+        <h1>Produtos</h1>
         <div class="menu">
-            
             <div class="produtos">
-                <img src="../src/1.jfif">
-                <p><strong>Camiseta E</strong></p>
-                <button id="comprar">Colocar no carrinho</button>
+                <img src="../src/1.webp" alt="Camiseta Eletronic">
+                <p><strong>Camiseta Eletronic</strong></p>
+                <p>R$65.00</p>
+                <button data-nome="Camiseta Eletronic" data-preco="65.00" data-codProduto="1">Adicionar ao carrinho</button>
             </div>
             <div class="produtos">
-                <img src="../src/1.jfif">
-                <p><strong>Camiseta E</strong></p>
-                <button id="comprar">Colocar no carrinho</button>
+                <img src="../src/2.webp" alt="Camiseta Advanced">
+                <p><strong>Camiseta Advanced</strong></p>
+                <p>R$70.00</p>
+                <button data-nome="Camiseta Advanced" data-preco="70.00" data-codProduto="2">Adicionar ao carrinho</button>
             </div>
             <div class="produtos">
-                <img src="../src/1.jfif">
+                <img src="../src/3.webp" alt="Camiseta E">
                 <p><strong>Camiseta E</strong></p>
-                <button id="comprar">Colocar no carrinho</button>
+                <p>R$65.99</p>
+                <button data-nome="Camiseta E" data-preco="65.99" data-codProduto="3">Adicionar ao carrinho</button>
             </div>
         </div>
     </main>
 </body>
-
 </html>

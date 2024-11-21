@@ -56,3 +56,37 @@ exports.excluirEstoque = async (req, res) => {
         res.status(500).json({ error: 'Erro ao excluir estoque', details: error });
     }
 };
+
+exports.validarEstoque = async (req, res) => {
+    const carrinho = req.body;
+
+    try {
+        // Verifica se todos os itens do carrinho têm estoque suficiente
+        for (const item of carrinho) {
+            const estoque = await Estoque.findOne({ where: { produtoId: item.codProduto } });
+
+            if (!estoque) {
+                return res.status(400).json({ message: `Produto não encontrado: ${item.nome}` });
+            }
+
+            if (estoque.quantidadeEstoque < item.quantidade) {
+                return res.status(400).json({ 
+                    message: `Estoque insuficiente para o produto: ${item.nome}` 
+                });
+            }
+        }
+
+        // Atualiza o estoque para cada item no carrinho
+        for (const item of carrinho) {
+            const estoque = await Estoque.findOne({ where: { produtoId: item.codProduto } });
+
+            await estoque.update({
+                quantidadeEstoque: estoque.quantidadeEstoque - item.quantidade
+            });
+        }
+
+        res.status(200).json({ message: 'Compra finalizada com sucesso!' });
+    } catch (error) {
+        res.status(500).json({ error: 'Erro ao validar o estoque', details: error });
+    }
+};

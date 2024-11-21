@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/listarReabastecimento.js" defer></script>
+    <title>Listar Reabastecimentos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../src/logo.png" alt="Logo">
+            <div>
+            <a href="./index.html">Início</a>
+            <a href="./cadastrarCliente.html">Cadastrar Cliente</a>
+            <a href="./listarClientes.html">Listar Clientes</a>
+            <a href="./obterCliente.html">Obter Cliente</a>
+            <a href="./atualizarCliente.html">Atualizar Cliente</a>
+            <a href="./excluirCliente.html">Excluir Cliente</a>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Lista de Reabastecimentos</h1>
+        <div id="reabastecimentos-lista">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>ProdutoId</th>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-reabastecimentos">
+                    <!-- Dados serão carregados aqui -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
