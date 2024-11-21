@@ -13,7 +13,7 @@ document.getElementById('cadastrarPedido').addEventListener('click', async (e) =
         
     }
 
-    fetch('http://localhost:3000/pedidos/',{
+    fetch('http://localhost:3000/pedidos',{
         method: "POST",
         headers: {"Content-Type":"application/json"},
         body: JSON.stringify(valores)
