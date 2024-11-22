@@ -19,7 +19,7 @@ document.getElementById('cadastrarEstoque').addEventListener('click', async (eve
             body: JSON.stringify(dados)
         }).then(resp =>resp.json())
         .then(dd =>{
-            resposta.innerHTML = "Estoque cadastrado "
+            resposta.innerHTML = dd.message
         }).catch(err=>{
             resposta.innerHTML = err.message
         })

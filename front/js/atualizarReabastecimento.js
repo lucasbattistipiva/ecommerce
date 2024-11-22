@@ -1,7 +1,7 @@
 
 const resultado = document.getElementById("res");
 
-document.getElementById('atualizarClienteForm').addEventListener("click", async (e) => {
+document.getElementById('atualizarreabastecimentoForm').addEventListener("click", async (e) => {
   e.preventDefault();
     const reabastecimentoId = document.getElementById('reabastecimentoId').value
   const estoqueId = document.getElementById('estoqueId').value
@@ -26,6 +26,7 @@ document.getElementById('atualizarClienteForm').addEventListener("click", async 
     resultado.innerHTML= `
       <p style="color: green;">Reabastecimento atualizado com sucesso!</p>
       <h3>Detalhes Atualizados:</h3>
+      
       <ul>
         <li><strong>ID:</strong> ${dd.codReabastecimento}</li>
         <li><strong>EstoqueID:</strong> ${dd.estoqueId}</li>

@@ -1,17 +1,31 @@
-window.addEventListener('DOMContentLoaded', async () => {
-    const estoquesElement = document.getElementById('estoques');
+
+const tabelaestoques = document.getElementById("tabela-estoques");
 
     
+function carregarestoques() {
+   
         fetch('http://localhost:3000/estoques')
-        .then(resp=>resp.json())
+        .then(resp => resp.json())
         .then(estoques=>{
-            estoquesElement.innerHTML = estoques.map(estoque => 
-                `<li>ID: ${estoque.codEstoque}, Produto: ${estoque.nomeProduto}, Quantidade: ${estoque.quantidadeEstoque}</li>`
-            ).join('');
+            tabelaestoques.innerHTML = "";
+
+            estoques.forEach(estoque => {
+                const row = document.createElement("tr");
+                console.log(estoques);
+
+                row.innerHTML = `
+                    <td>${estoque.codEstoque}</td>
+                    <td>${estoque.produtoId}</td>
+                    <td>${estoque.nomeProduto}</td>
+                    <td>${estoque.quantidadeEstoque}</td>   
+                `;
+
+                tabelaestoques.appendChild(row);
+            });
         }).catch(err=>{
-            console.error("Erro ao listar estoque",err)
-            alert("Erro ao listar estoque")
-        })
-            
-        
-});
+            console.error(err);
+        }) }
+
+
+window.onload = carregarestoques;
+

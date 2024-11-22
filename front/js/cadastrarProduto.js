@@ -10,13 +10,13 @@ document.getElementById('cadastrarProduto').addEventListener('click', async (e) 
 
     const valores={
         fabricanteId,
-        nomeProduto,
-        quantidadeProduto,
-        precoProduto,
-        descricaoProduto
+            nomeProduto,
+            quantidadeProduto,
+            precoProduto,
+            descricaoProduto
     }
 
-    fetch('http://localhost:3000/produtos/',{
+    fetch('http://localhost:3000/produtos',{
         method: "POST",
         headers: {"Content-Type":"application/json"},
         body: JSON.stringify(valores)

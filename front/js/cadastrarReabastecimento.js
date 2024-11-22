@@ -14,7 +14,7 @@ document.getElementById('cadastrarReabastecimento').addEventListener('click', as
         dataReabastecimento
     }
 
-    fetch('http://localhost:3000/reabastecimento/',{
+    fetch('http://localhost:3000/reabastecimentos/',{
         method: "POST",
         headers: {"Content-Type":"application/json"},
         body: JSON.stringify(valores)

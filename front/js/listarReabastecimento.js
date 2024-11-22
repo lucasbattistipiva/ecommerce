@@ -4,7 +4,7 @@ const tabelareabastecimentos = document.getElementById("tabela-reabastecimentos"
     
 function carregarreabastecimentos() {
    
-        fetch('http://localhost:3000/clientes')
+        fetch('http://localhost:3000/reabastecimentos')
         .then(resp => resp.json())
         .then(reabastecimentos=>{
             tabelareabastecimentos.innerHTML = "";

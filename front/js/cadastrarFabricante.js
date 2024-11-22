@@ -37,7 +37,8 @@ document.getElementById('cadastrarFabricante').addEventListener('click',(e)=>{
         body: JSON.stringify(valores)
     }).then(resp => resp.json())
     .then(dd =>{
-        res.innerHTML = "Fabricante cadastrado"
+            res.innerHTML = dd.message
+        
     }).catch(err=>{
         res.innerHTML = err.message
     })

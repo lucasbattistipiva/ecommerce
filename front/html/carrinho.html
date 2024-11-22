@@ -8,17 +8,47 @@
     <title>Carrinho de Compras</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="../src/logo.png" alt="Logo">
-            <a href="../html/index.html">Início</a>
-            <a href="../html/carrinho.html">Carrinho</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Carrinho de Compras</h1>
-        <div id="compras"></div>
-        <button id="finalizarCompra">Finalizar Compra</button>
-    </main>
+    <div class="content-wrapper">
+        <header>
+            <nav>
+                <img src="../src/logo.png" alt="Logo">
+                <button class="nav-toggle" aria-label="Abrir menu">&#9776;</button>
+                <a href="../html/index.html">Início</a>
+                <a href="../html/carrinho.html">Carrinho</a>
+            </nav>
+        </header>        
+        <main>
+            <h1>Carrinho de Compras</h1>
+            <div id="compras"></div>
+            <button id="finalizarCompra">Finalizar Compra</button>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma loja especializada em camisetas de alta qualidade e design único. Nossa missão é vestir você com estilo!</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <ul class="social-links">
+                    <li><a href="#"><img src="../src/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../src/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="../src/twitter.webp" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LP Store. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

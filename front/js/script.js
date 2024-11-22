@@ -22,3 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// caso o usuário clique no botao de menu ativa, se clicar novamente desativara
+document.addEventListener("DOMContentLoaded", () => {
+    const navToggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector("header nav");
+
+    navToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+});
+
