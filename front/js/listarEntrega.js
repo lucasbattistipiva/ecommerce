@@ -1,22 +1,33 @@
-document.addEventListener('DOMContentLoaded', async () => {
-    const listaElement = document.getElementById('lista');
 
-    fetch('http://localhost:3000/entregas')
-    .then(resp=>resp.json())
-    .then(entregas=>{
-        listaElement.innerHTML = `
-                <ul>
-                    ${entregas.map(entrega => `
-                        <li>ID: ${entrega.codEntrega} - Produto: ${entrega.nomeProduto} - Quantidade: ${entrega.quantidadeProduto} - Data: ${new Date(entrega.dataEntrega).toLocaleDateString()}</li>
-                    `).join('')}
-                </ul>
-            `;
-    }).catch(err=>{
-        console.error("Erro ao listar Entrega",err)
-        alert("Erro ao listar Entrega")
-    })
+const tabelaentregas = document.getElementById("tabela-entregas");
 
     
-});
+function carregarentregas() {
+   
+        fetch('http://localhost:3000/entregas')
+        .then(resp => resp.json())
+        .then(entregas=>{
+            tabelaentregas.innerHTML = "";
 
+            entregas.forEach(entrega => {
+                const row = document.createElement("tr");
+                console.log(entregas);
+
+                row.innerHTML = `
+                    <td>${entrega.codEntrega}</td>
+                    <td>${entrega.pedidoId}</td>
+                    <td>${entrega.nomeProduto}</td>
+                    <td>${entrega.quantidadeProduto}</td>
+                    <td>${entrega.dataEntrega}</td>
+                    
+                `;
+
+                tabelaentregas.appendChild(row);
+            });
+        }).catch(err=>{
+            console.error(err);
+        }) }
+
+
+window.onload = carregarentregas;
 

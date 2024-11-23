@@ -1,5 +1,5 @@
 const res = document.getElementById('res')
-document.getElementById('cadastrarCliente').addEventListener('click', async (e) => {
+document.getElementById('cadastrarPagamento').addEventListener('click', async (e) => {
     e.preventDefault();
 
    const pedidoId = document.getElementById('pedidoId').value

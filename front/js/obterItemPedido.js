@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>${itempedido.codCliente}</td>
-                            <td>${itempedido.nomeCliente}</td>
-                            <td>${itempedido.sobrenomeCliente}</td>
-                            <td>${itempedido.emailCliente}</td>
-                            <td>${itempedido.telefoneCliente}</td>
+                            <td>${itempedido.codItemPedido}</td>
+                            <td>${itempedido.pedidoId}</td>
+                            <td>${itempedido.produtoId}</td>
+                            <td>${itempedido.quantidadeProduto}</td>
+                            <td>${itempedido.precoProduto}</td>
                         </tr>
                     </tbody>
                 </table>

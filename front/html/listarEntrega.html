@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
     <title>Listar Entregas</title>
     <script defer src="../js/listarEntrega.js"></script>
 </head>
@@ -21,7 +22,22 @@
         </div>
         </nav>
     </header>
-    <h1>Lista de Entregas</h1>
-    <div id="lista"></div>
+    <h1>Lista de entregas</h1>
+        <div id="entregas-lista">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>PedidoID</th>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Data Entrega</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-entregas">
+                    <!-- Dados serão carregados aqui -->
+                </tbody>
+            </table>
+        </div>
 </body>
 </html>

@@ -18,7 +18,7 @@ function carregaritempedido() {
                     <td>${item.pedidoId}</td>
                     <td>${item.produtoId}</td>
                     <td>${item.quantidadeProduto}</td>
-                    <td>${item.precoProdutoitem}</td>
+                    <td>${item.precoProduto}</td>
                     
                     
                 `;

@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>${pedido.codpedido}</td>
+                            <td>${pedido.codPedido}</td>
                             <td>${pedido.clienteId}</td>
                             <td>${pedido.dataPedido}</td>
                             <td>${pedido.valorPedido}</td>
