@@ -1,17 +1,12 @@
+const { RAW } = require('sequelize/lib/query-types');
 const Produto = require('../models/Produto');
 
 // Função para criar um novo produto
 exports.criarProduto = async (req, res) => {
     try {
-        const { fabricanteId, nomeProduto, quantidadeProduto, precoProduto, descricaoProduto } = req.body;
+        const dados = req.body;
 
-        const novoProduto = await Produto.create({
-            fabricanteId,
-            nomeProduto,
-            quantidadeProduto,
-            precoProduto,
-            descricaoProduto
-        });
+        const novoProduto = await Produto.create(dados,{raw:true});
 
         return res.status(201).json({message:"Produto cadastrada com sucesso"});
     } catch (error) {
@@ -51,27 +46,13 @@ exports.obterProduto = async (req, res) => {
 // Função para atualizar um produto
 exports.atualizarProduto = async (req, res) => {
     try {
-        const { id } = req.params;
-        const { fabricanteId, nomeProduto, quantidadeProduto, precoProduto, descricaoProduto } = req.body;
-
-        const produto = await Produto.findByPk(id);
-
-        if (!produto) {
-            return res.status(404).json({ message: 'Produto não encontrado' });
-        }
-
-        produto.fabricanteId = fabricanteId || produto.fabricanteId;
-        produto.nomeProduto = nomeProduto || produto.nomeProduto;
-        produto.quantidadeProduto = quantidadeProduto || produto.quantidadeProduto;
-        produto.precoProduto = precoProduto || produto.precoProduto;
-        produto.descricaoProduto = descricaoProduto || produto.descricaoProduto;
-
-        await produto.save();
-
-        return res.status(200).json(produto);
+        const produto = await Produto.findByPk(req.params.id);
+        if (!produto) return res.status(404).json({ message: 'produto não encontrado' });
+        
+        await produto.update(req.body);
+        res.status(200).json(produto);
     } catch (error) {
-        console.error(error);
-        return res.status(500).json({ message: 'Erro ao atualizar o produto' });
+        res.status(500).json({ error: 'Erro ao atualizar produto', details: error });
     }
 };
 

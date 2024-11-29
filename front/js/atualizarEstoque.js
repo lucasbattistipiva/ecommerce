@@ -3,10 +3,12 @@ document.getElementById('atualizarEstoque').addEventListener('click', async (e) 
     e.preventDefault()
     const id = document.getElementById('id').value;
     const quantidadeEstoque = document.getElementById('quantidadeEstoque').value;
+    const nomeProduto = document.getElementById('nomeProduto').value;
     
 
     const dados={
-        quantidadeEstoque
+        quantidadeEstoque,
+        nomeProduto
     }
 
     
